@@ -1,0 +1,29 @@
+<?php
+$stores = $block->getStoreNames();
+
+// Do not render if only one store
+if (count($stores) <= 1) {
+    return;
+}
+?>
+
+<div style="margin-top:10px;">
+    <strong style="font-size:14px;">Also available on:</strong>
+
+    <div style="margin-top:6px;">
+        <?php foreach ($stores as $store): ?>
+            <span style="
+                display:inline-block;
+                background:#f2f2f2;
+                color:#333;
+                padding:4px 10px;
+                border-radius:15px;
+                font-size:12px;
+                margin:2px;
+                border:1px solid #ddd;
+            ">
+                <?= $block->escapeHtml($store) ?>
+            </span>
+        <?php endforeach; ?>
+    </div>
+</div>
