@@ -1,0 +1,9 @@
+type Query {
+    customData(id: Int!): CustomData @resolver(class: "Kalpesh\\CustomGraphql\\Model\\Resolver\\CustomData")
+}
+
+type CustomData {
+    id: Int
+    name: String
+    message: String
+}
