@@ -3,6 +3,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'VVGroup_StoreBadge',
+    'Kalpesh_ProductInfo',
     __DIR__
 );

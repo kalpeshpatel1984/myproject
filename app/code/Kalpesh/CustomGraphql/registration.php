@@ -3,6 +3,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'VVGroup_PriceSync',
+    'Kalpesh_CustomGraphql',
     __DIR__
 );

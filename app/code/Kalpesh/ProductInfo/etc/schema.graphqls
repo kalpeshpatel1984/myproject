@@ -1,0 +1,12 @@
+type Query {
+  productData: [Product] @resolver(class: "Kalpesh\\ProductInfo\\Model\\Resolver\\ProductData")
+}
+
+type Product {
+  id: Int
+  name: String
+  sku: String
+  price: Float
+  description: String
+  image: String
+}
